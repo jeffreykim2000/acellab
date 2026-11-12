@@ -1,0 +1,1719 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acel Lab. Find companies, build pitches, close deals</title>
+    <meta
+      name="description"
+      content="Acel Lab builds the Startline suite. Tools for finding business partners, creating pitch materials, and closing deals without the usual back and forth."
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/i18n.js" defer></script>
+  </head>
+
+  <body>
+    <div class="top-stack">
+      <!-- Top Nav -->
+      <header class="site-header" id="siteHeader">
+        <input class="mobile-toggle" type="checkbox" id="mobile-nav-toggle" />
+
+        <div class="container header">
+          <a class="brand" href="index.html" aria-label="Acel Lab home">
+            <img
+              src="https://startline-static-ui.s3.us-east-1.amazonaws.com/logo/Acel+Lab+Logo.jpg"
+              alt="Acel Lab logo"
+              class="brand__logo"
+              width="160"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+
+          <!-- Desktop Nav -->
+          <nav class="desktop-nav" aria-label="Primary">
+            <div class="header__center">
+              <div class="nav__dropdown">
+                <a class="nav__dropbtn" href="../../startline_public/html/index.html">
+                  <span data-i18n="nav_products">Products</span>
+                  <span class="nav__chev" aria-hidden="true">▾</span>
+                </a>
+                <div
+                  class="nav__dropmenu"
+                  role="menu"
+                  aria-label="Products menu"
+                >
+                  <a
+                    role="menuitem"
+                    href="https://startline.vip"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Startline</a
+                  >
+                  <a role="menuitem" href="../../startline_public/html/playground.html"
+                    >Startline Playground</a
+                  >
+                  <a role="menuitem" href="../../startline_public/html/bash.html">Startline Bash</a>
+                </div>
+              </div>
+              <a
+                class="desktop-nav__link"
+                href="contact.html"
+                data-i18n="nav_contact"
+                >Contact</a
+              >
+              <a class="desktop-nav__link" href="careers.html" data-i18n="nav_careers">Careers</a>
+            </div>
+            <div class="header__right">
+              <div class="lang-switcher" id="langSwitcherDesktop">
+                <button
+                  type="button"
+                  class="lang-switcher__btn"
+                  aria-expanded="false"
+                  aria-haspopup="true"
+                  aria-label="Language"
+                >
+                  <span data-lang-current>EN</span>
+                  <span class="lang-switcher__chevron" aria-hidden="true"
+                    >▾</span
+                  >
+                </button>
+                <div
+                  class="lang-switcher__dropdown"
+                  id="langDropdownDesktop"
+                  role="menu"
+                >
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    role="menuitem"
+                    data-lang-set="en"
+                  >
+                    EN
+                  </button>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    role="menuitem"
+                    data-lang-set="zh"
+                  >
+                    中文
+                  </button>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    role="menuitem"
+                    data-lang-set="ja"
+                  >
+                    日本語
+                  </button>
+                  <button
+                    type="button"
+                    class="lang-switcher__option"
+                    role="menuitem"
+                    data-lang-set="ko"
+                  >
+                    한국어
+                  </button>
+                </div>
+              </div>
+
+              <button
+                class="btn btn--primary mobile-actions__btn openWaitlist"
+                type="button"
+                data-i18n="ribbon_btn"
+              >
+                Join waitlist
+              </button>
+            </div>
+          </nav>
+
+          <!-- Mobile Burger -->
+          <label
+            class="mobile-burger"
+            for="mobile-nav-toggle"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </label>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div class="mobile-menu">
+          <nav class="mobile-menu__inner" aria-label="Mobile navigation">
+            <details class="mobile-dropdown">
+              <summary>
+                <span data-i18n="nav_products">Products</span>
+                <span class="mobile-dropdown__chev" aria-hidden="true">▾</span>
+              </summary>
+
+              <div class="mobile-dropdown__items">
+                <a
+                  href="https://startline.vip"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Startline</a
+                >
+              </div>
+            </details>
+
+            <a class="mobile-link" href="contact.html" data-i18n="nav_contact">Contact</a>
+            <a class="mobile-link" href="careers.html" data-i18n="nav_careers">Careers</a>
+
+            <div class="lang-switcher lang-switcher--mobile">
+              <span
+                class="lang-switcher__label"
+                style="
+                  display: block;
+                  font-weight: 700;
+                  margin-bottom: 8px;
+                  font-size: 0.9rem;
+                "
+                data-i18n="lang_label"
+                >Language</span
+              >
+              <div class="lang-switcher__options">
+                <button
+                  type="button"
+                  class="lang-switcher__option"
+                  data-lang-set="en"
+                >
+                  EN
+                </button>
+                <button
+                  type="button"
+                  class="lang-switcher__option"
+                  data-lang-set="zh"
+                >
+                  中文
+                </button>
+                <button
+                  type="button"
+                  class="lang-switcher__option"
+                  data-lang-set="ja"
+                >
+                  日本語
+                </button>
+                <button
+                  type="button"
+                  class="lang-switcher__option"
+                  data-lang-set="ko"
+                >
+                  한국어
+                </button>
+              </div>
+            </div>
+
+            <div class="mobile-actions">
+              <button
+                class="btn btn--primary mobile-actions__btn openWaitlist"
+                type="button"
+                data-i18n="ribbon_btn"
+              >
+                Join waitlist
+              </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Announcement bar (pill below nav) -->
+      <div class="announcement-bar" id="waitlistRibbon">
+        <button
+          type="button"
+          class="announcement-bar__pill openWaitlist"
+          id="openWaitlistRibbon"
+        >
+          <span class="announcement-bar__badge" data-i18n="ribbon_badge"
+            >New</span
+          >
+          <span class="announcement-bar__text" data-i18n="ribbon_text"
+            >Startline Playground & Bash waitlist is open</span
+          >
+          <span class="announcement-bar__arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero -->
+      <section class="hero hero--fullvid">
+        <div class="container hero__copy-row">
+          <div class="hero-backed">
+            <div class="hero-backed__label" data-i18n="backed_by">
+              BACKED BY
+            </div>
+            <div class="hero-backed__logos">
+              <img
+                src="../images/hkstp_logo.png"
+                alt="HKSTP"
+                class="hero-backed__logo hero-backed__logo--hkstp"
+                loading="lazy"
+                decoding="async"
+              />
+              <img
+                src="../images/polyventures_logo.png"
+                alt="PolyVentures"
+                class="hero-backed__logo hero-backed__logo--polyventures"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+          <p class="kicker" data-i18n="hero_kicker">
+            The Startline suite. Built for B2B teams.
+          </p>
+          <h1 data-i18n="hero_h1">
+            Find companies. Build your pitch. Close the deal.
+          </h1>
+          <p class="subhead" data-i18n="hero_subhead">
+            Acel Lab is the home of Startline. We are building an ecosystem to
+            help innovators accelerate business growth through a 3 layer
+            execution of discovery, communication and collaboration. Acel Lab
+            takes raw data of companies and creates it into useful information so
+            that you can find, learn and connect with potential partners.
+          </p>
+          <div class="hero__actions">
+            <button
+              class="btn btn--primary openWaitlist"
+              type="button"
+              data-i18n="hero_cta"
+            >
+              Get started →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Products -->
+      <section id="products" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>
+              <span data-i18n="products_heading"
+                >Find your ideal company in seconds</span
+              >
+            </h2>
+            <p data-i18n="products_sub">
+              Three products into one. Each built to remove friction from
+              discovery to execution.
+            </p>
+            <div class="platform-flow__summary platform-flow__summary--inline">
+              <h3 class="platform-flow__summary-title">
+                Three tools, one workflow
+              </h3>
+              <p class="platform-flow__summary-p">
+                Search for the companies you want to collaborate with, create
+                content automatically with Startline AI and communicate to share
+                what makes you the best.
+              </p>
+            </div>
+          <div class="product-list">
+            <article class="product product--startline">
+              <div class="product__label product__label--startline" data-i18n="product_search">Search</div>
+              <img src="https://startline-static-ui.s3.us-east-1.amazonaws.com/logo/logo.png" alt="Startline" class="product__logo" loading="lazy" />
+              <p data-i18n="product_startline_desc">Search and filter 15,000+ companies by industry, region, funding stage, and more. Get company summaries, contact info, and fit scores, all in one place, no spreadsheet required.</p>
+              <div class="product-hover product-hover--video-full">
+                <div class="product-hover__video">
+                  <video class="product-hover__vid" muted playsinline loop preload="metadata" poster="">
+                    <source src="https://startline-static-ui.s3.us-east-1.amazonaws.com/video/index_demo.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div class="product-hover__actions">
+                  <a class="btn btn--primary btn--sm" href="https://startline.vip" target="_blank" rel="noopener noreferrer" data-i18n="product_startline_cta">Startline for Free</a>
+                </div>
+              </div>
+              <div class="product-chips">
+                <span class="product-chip product-chip--blue">Financials</span>
+                <span class="product-chip product-chip--blue">Team contacts</span>
+                <span class="product-chip product-chip--blue">Due diligence</span>
+                <span class="product-chip product-chip--blue">Location</span>
+                <span class="product-chip product-chip--blue">Product info</span>
+                <span class="product-chip product-chip--blue">Company info</span>
+              </div>
+            </article>
+          </div>
+          <p class="product-list-tagline">One suite. Three products. One workflow. See how Startline covers everything in a single pipeline.</p>
+          </div>
+
+          <!-- Product showcases: techy pipeline UI per product -->
+          <div class="product-showcases">
+            <!-- 1. Startline -->
+            <section
+              class="psc psc--startline"
+              aria-labelledby="showcase-startline-heading"
+            >
+              <div class="psc__inner">
+                <div class="psc__left">
+                  <span class="psc__label psc__label--blue">DATA SEARCH</span>
+                  <h2 id="showcase-startline-heading" class="psc__title">
+                    Search 15,000+ companies and know who to connect with
+                  </h2>
+                  <p class="psc__tagline">
+                    We scrape, curate, and process company data so you always
+                    have accurate, up-to-date data. See exactly how raw data
+                    becomes a recommendation for you.
+                  </p>
+                  <!-- Pipeline flow: half-width buttons with node connectors showing progression -->
+                  <div
+                    class="psc__pipeline psc__pipeline--flow"
+                    role="tablist"
+                    data-startline-tabs
+                    aria-label="Data pipeline steps"
+                  >
+                    <div class="psc__flow-row">
+                      <button
+                        type="button"
+                        class="psc__pipe-btn psc__pipe-btn--active"
+                        role="tab"
+                        aria-selected="true"
+                        data-tab-index="0"
+                      >
+                        <span class="psc__pipe-node">01</span>
+                        <span class="psc__pipe-name">Raw Data</span>
+                      </button>
+                      <span class="psc__flow-arrow" aria-hidden="true"></span>
+                      <button
+                        type="button"
+                        class="psc__pipe-btn"
+                        role="tab"
+                        aria-selected="false"
+                        data-tab-index="1"
+                      >
+                        <span class="psc__pipe-node">02</span>
+                        <span class="psc__pipe-name">Curate</span>
+                      </button>
+                    </div>
+                    <div class="psc__flow-row">
+                      <button
+                        type="button"
+                        class="psc__pipe-btn"
+                        role="tab"
+                        aria-selected="false"
+                        data-tab-index="2"
+                      >
+                        <span class="psc__pipe-node">03</span>
+                        <span class="psc__pipe-name">Generate insight</span>
+                      </button>
+                      <span class="psc__flow-arrow" aria-hidden="true"></span>
+                      <button
+                        type="button"
+                        class="psc__pipe-btn"
+                        role="tab"
+                        aria-selected="false"
+                        data-tab-index="3"
+                      >
+                        <span class="psc__pipe-node">04</span>
+                        <span class="psc__pipe-name">Categorize</span>
+                      </button>
+                    </div>
+                    <div class="psc__flow-row">
+                      <button
+                        type="button"
+                        class="psc__pipe-btn"
+                        role="tab"
+                        aria-selected="false"
+                        data-tab-index="4"
+                      >
+                        <span class="psc__pipe-node">05</span>
+                        <span class="psc__pipe-name">Recommend</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div
+                    class="psc__hint-strip"
+                    data-startline-hint
+                    aria-live="polite"
+                  >
+                    <span class="psc__hint-icon" aria-hidden="true">→</span>
+                    <span class="psc__hint-text"
+                      >Next Curate: Validate Sources</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="psc__right psc__right--video-slots"
+                  data-startline-video-panel
+                >
+                  <div
+                    class="psc__vid-slot psc__vid-slot--active"
+                    data-video-slot="0"
+                  >
+                    <div class="psc__vid-label">01 Raw Data</div>
+                    <div class="psc__vid-frame">
+                      <video
+                        class="psc__video"
+                        playsinline
+                        muted
+                        loop
+                        preload="metadata"
+                      >
+                        <source src="../videos/raw-data.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
+                  <div class="psc__vid-slot" data-video-slot="1">
+                    <div class="psc__vid-label">02 Curate</div>
+                    <div class="psc__vid-frame">
+                      <video
+                        class="psc__video"
+                        playsinline
+                        muted
+                        loop
+                        preload="metadata"
+                      >
+                        <source src="../videos/curate-data.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
+                  <div class="psc__vid-slot" data-video-slot="2">
+                    <div class="psc__vid-label">03 Generate insight</div>
+                    <div class="psc__vid-frame">
+                      <div class="gi-demo" data-gi-demo>
+                        <!-- Stage 0: raw company rows scanning -->
+                        <div class="gi-stage gi-stage--active" data-gi-stage="0">
+                          <div class="gi-scan-header">
+                            <span class="gi-scan-dot"></span>
+                            Scanning company data...
+                          </div>
+                          <div class="gi-rows">
+                            <div class="gi-row gi-row--flash"><span class="gi-col gi-col--name">Acme Corp</span><span class="gi-col">SaaS</span><span class="gi-col">Hong Kong</span><span class="gi-col gi-col--dim">142 emp.</span></div>
+                            <div class="gi-row"><span class="gi-col gi-col--name">NovaTech</span><span class="gi-col">Fintech</span><span class="gi-col">Singapore</span><span class="gi-col gi-col--dim">89 emp.</span></div>
+                            <div class="gi-row gi-row--flash2"><span class="gi-col gi-col--name">BridgeCo</span><span class="gi-col">Logistics</span><span class="gi-col">Tokyo</span><span class="gi-col gi-col--dim">310 emp.</span></div>
+                            <div class="gi-row"><span class="gi-col gi-col--name">PeakLabs</span><span class="gi-col">AI/ML</span><span class="gi-col">Seoul</span><span class="gi-col gi-col--dim">55 emp.</span></div>
+                            <div class="gi-row gi-row--flash3"><span class="gi-col gi-col--name">Orbis Inc.</span><span class="gi-col">E-commerce</span><span class="gi-col">Taiwan</span><span class="gi-col gi-col--dim">207 emp.</span></div>
+                          </div>
+                        </div>
+                        <!-- Stage 1: extracting signals -->
+                        <div class="gi-stage" data-gi-stage="1">
+                          <div class="gi-scan-header">
+                            <span class="gi-scan-dot"></span>
+                            Extracting signals...
+                          </div>
+                          <div class="gi-signals">
+                            <div class="gi-signal"><span class="gi-signal-key">Industry cluster</span><span class="gi-signal-bar" style="--w:82%"></span><span class="gi-signal-val">SaaS / Tech</span></div>
+                            <div class="gi-signal"><span class="gi-signal-key">Avg. team size</span><span class="gi-signal-bar" style="--w:55%"></span><span class="gi-signal-val">160 emp.</span></div>
+                            <div class="gi-signal"><span class="gi-signal-key">Top region</span><span class="gi-signal-bar" style="--w:70%"></span><span class="gi-signal-val">APAC</span></div>
+                            <div class="gi-signal"><span class="gi-signal-key">Growth stage</span><span class="gi-signal-bar" style="--w:60%"></span><span class="gi-signal-val">Series A–B</span></div>
+                          </div>
+                        </div>
+                        <!-- Stage 2: insight cards -->
+                        <div class="gi-stage" data-gi-stage="2">
+                          <div class="gi-scan-header gi-scan-header--done">
+                            <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                            Insights ready
+                          </div>
+                          <div class="gi-cards">
+                            <div class="gi-card">
+                              <p class="gi-card-label">Dominant sector</p>
+                              <p class="gi-card-value">SaaS &amp; Fintech</p>
+                            </div>
+                            <div class="gi-card">
+                              <p class="gi-card-label">Primary market</p>
+                              <p class="gi-card-value gi-card-value--blue">APAC</p>
+                            </div>
+                            <div class="gi-card">
+                              <p class="gi-card-label">Avg. company size</p>
+                              <p class="gi-card-value">160 employees</p>
+                            </div>
+                            <div class="gi-card gi-card--highlight">
+                              <p class="gi-card-label">Best match score</p>
+                              <p class="gi-card-value gi-card-value--blue">94%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="psc__vid-slot" data-video-slot="3">
+                    <div class="psc__vid-label">04 Categorize</div>
+                    <div class="psc__vid-frame">
+                      <video
+                        class="psc__video"
+                        playsinline
+                        muted
+                        loop
+                        preload="metadata"
+                      >
+                        <source
+                          src="https://startline-static-ui.s3.us-east-1.amazonaws.com/video/index_demo.mp4"
+                          type="video/mp4"
+                        />
+                      </video>
+                    </div>
+                  </div>
+                  <div class="psc__vid-slot" data-video-slot="4">
+                    <div class="psc__vid-label">05 Recommend</div>
+                    <div class="psc__vid-frame">
+                      <video
+                        class="psc__video"
+                        playsinline
+                        muted
+                        loop
+                        preload="metadata"
+                      >
+                        <source src="../videos/Recommend.mp4" type="video/mp4" />
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- 2. Startline Playground -->
+            <section
+              class="psc psc--playground"
+              aria-labelledby="showcase-playground-heading"
+            >
+              <div class="psc__inner psc__inner--reverse">
+                <div class="psc__right psc__right--playground">
+                  <div class="psc__workflow" data-playground-tabs>
+                    <!-- Step tabs -->
+                    <div
+                      class="psc__wf-tabs"
+                      role="tablist"
+                      aria-label="Playground workflow"
+                    >
+                      <button
+                        type="button"
+                        class="psc__wf-tab psc__wf-tab--active psc__wf-tab--green"
+                        data-step="0"
+                        aria-selected="true"
+                      >
+                        <span class="psc__wf-tab-num">01</span> Train
+                      </button>
+                      <span class="psc__wf-connector" aria-hidden="true"></span>
+                      <button
+                        type="button"
+                        class="psc__wf-tab"
+                        data-step="1"
+                        aria-selected="false"
+                      >
+                        <span class="psc__wf-tab-num">02</span> Configure
+                      </button>
+                      <span class="psc__wf-connector" aria-hidden="true"></span>
+                      <button
+                        type="button"
+                        class="psc__wf-tab"
+                        data-step="2"
+                        aria-selected="false"
+                      >
+                        <span class="psc__wf-tab-num">03</span> Build
+                      </button>
+                      <span class="psc__wf-connector" aria-hidden="true"></span>
+                      <button
+                        type="button"
+                        class="psc__wf-tab"
+                        data-step="3"
+                        aria-selected="false"
+                      >
+                        <span class="psc__wf-tab-num">04</span> Ship
+                      </button>
+                    </div>
+                    <!-- Step panels -->
+                    <div class="psc__wf-panels">
+                      <!-- Train panel -->
+                      <div
+                        class="psc__wf-panel psc__wf-panel--active"
+                        data-step-content="0"
+                      >
+                        <div class="psc__wf-panel-header">
+                          Drop in what you have
+                        </div>
+                        <p class="psc__wf-panel-desc">
+                          Upload your existing materials. The model learns your brand and content style.
+                        </p>
+                        <!-- Stage nav buttons -->
+                        <div class="pg-upload__nav" data-pg-upload-nav>
+                          <button class="pg-upload__nav-btn pg-upload__nav-btn--active" data-goto="0">Upload</button>
+                          <button class="pg-upload__nav-btn" data-goto="2">Process</button>
+                          <button class="pg-upload__nav-btn" data-goto="3">Analyze</button>
+                        </div>
+                        <!-- Animated upload sequence -->
+                        <div class="pg-upload" data-pg-upload>
+                          <!-- Stage 0: three category drop zones -->
+                          <div class="pg-upload__stage pg-upload__stage--active" data-stage="0">
+                            <div class="pg-upload__zones">
+                              <div class="pg-upload__zone">
+                                <div class="pg-upload__zone-icon">
+                                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                                </div>
+                                <p class="pg-upload__zone-label">Marketing</p>
+                                <p class="pg-upload__zone-hint">Drop files here</p>
+                              </div>
+                              <div class="pg-upload__zone">
+                                <div class="pg-upload__zone-icon">
+                                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                                </div>
+                                <p class="pg-upload__zone-label">Branding / Business</p>
+                                <p class="pg-upload__zone-hint">Drop files here</p>
+                              </div>
+                              <div class="pg-upload__zone">
+                                <div class="pg-upload__zone-icon">
+                                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+                                </div>
+                                <p class="pg-upload__zone-label">Product</p>
+                                <p class="pg-upload__zone-hint">Drop files here</p>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Stage 1: drag hover -->
+                          <div class="pg-upload__stage" data-stage="1">
+                            <div class="pg-upload__dropzone pg-upload__dropzone--hover">
+                              <div class="pg-upload__file-card">
+                                <span class="pg-upload__file-card-icon">
+                                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                                </span>
+                                <div class="pg-upload__file-card-info">
+                                  <p class="pg-upload__file-card-name">brand_guide.pdf</p>
+                                  <p class="pg-upload__file-card-sub">And 2 others (45 MB)</p>
+                                </div>
+                                <span class="pg-upload__cursor-arrow">&#9658;</span>
+                              </div>
+                              <p class="pg-upload__drop-title">Drop your files here</p>
+                              <p class="pg-upload__drop-hint">PDF, DOCX, PNG supported</p>
+                            </div>
+                          </div>
+                          <!-- Stage 2: uploading -->
+                          <div class="pg-upload__stage" data-stage="2">
+                            <div class="pg-upload__uploading">
+                              <p class="pg-upload__uploading-label">Uploading 3 files...</p>
+                              <div class="pg-upload__prog-item">
+                                <span class="pg-upload__prog-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                                <div class="pg-upload__prog-info">
+                                  <span class="pg-upload__prog-name">brand_guide.pdf</span>
+                                  <div class="pg-upload__bar-track"><div class="pg-upload__bar-fill" data-target-width="100" style="width:0%"></div></div>
+                                </div>
+                                <span class="pg-upload__prog-pct" data-target-pct="100">0%</span>
+                              </div>
+                              <div class="pg-upload__prog-item">
+                                <span class="pg-upload__prog-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                                <div class="pg-upload__prog-info">
+                                  <span class="pg-upload__prog-name">pitch_deck.pptx</span>
+                                  <div class="pg-upload__bar-track"><div class="pg-upload__bar-fill" data-target-width="100" style="width:0%"></div></div>
+                                </div>
+                                <span class="pg-upload__prog-pct" data-target-pct="100">0%</span>
+                              </div>
+                              <div class="pg-upload__prog-item">
+                                <span class="pg-upload__prog-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>
+                                <div class="pg-upload__prog-info">
+                                  <span class="pg-upload__prog-name">product_logo.png</span>
+                                  <div class="pg-upload__bar-track"><div class="pg-upload__bar-fill" data-target-width="100" style="width:0%"></div></div>
+                                </div>
+                                <span class="pg-upload__prog-pct" data-target-pct="100">0%</span>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Stage 3: processing -->
+                          <div class="pg-upload__stage" data-stage="3">
+                            <div class="pg-upload__steps">
+                              <div class="pg-upload__step"><span class="pg-upload__step-spinner"></span><span class="pg-upload__step-name">Brand Analysis</span></div>
+                              <div class="pg-upload__step"><span class="pg-upload__step-spinner"></span><span class="pg-upload__step-name">Tone Detection</span></div>
+                              <div class="pg-upload__step"><span class="pg-upload__step-spinner"></span><span class="pg-upload__step-name">Content Mapping</span></div>
+                              <div class="pg-upload__step"><span class="pg-upload__step-spinner"></span><span class="pg-upload__step-name">Style Learning</span></div>
+                            </div>
+                          </div>
+                          <!-- Stage 4: result (3 category analyses) -->
+                          <div class="pg-upload__stage" data-stage="4">
+                            <div class="pg-upload__results-grid">
+                              <!-- Marketing -->
+                              <div class="pg-upload__result">
+                                <div class="pg-upload__result-header">
+                                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                  Marketing
+                                </div>
+                                <div class="pg-upload__result-grid pg-upload__result-grid--2col">
+                                  <span class="pg-upload__result-key">tone</span><span class="pg-upload__result-val pg-upload__result-val--blue">persuasive</span>
+                                  <span class="pg-upload__result-key">channel</span><span class="pg-upload__result-val pg-upload__result-val--blue">LinkedIn</span>
+                                  <span class="pg-upload__result-key">format</span><span class="pg-upload__result-val">carousel</span>
+                                  <span class="pg-upload__result-key">audience</span><span class="pg-upload__result-val">B2B</span>
+                                </div>
+                              </div>
+                              <!-- Branding / Business -->
+                              <div class="pg-upload__result">
+                                <div class="pg-upload__result-header">
+                                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                  Branding / Business
+                                </div>
+                                <div class="pg-upload__result-grid pg-upload__result-grid--2col">
+                                  <span class="pg-upload__result-key">color</span><span class="pg-upload__result-val pg-upload__result-val--blue">#2962ff</span>
+                                  <span class="pg-upload__result-key">voice</span><span class="pg-upload__result-val pg-upload__result-val--blue">professional</span>
+                                  <span class="pg-upload__result-key">language</span><span class="pg-upload__result-val">English</span>
+                                  <span class="pg-upload__result-key">mission</span><span class="pg-upload__result-val">detected</span>
+                                </div>
+                              </div>
+                              <!-- Product -->
+                              <div class="pg-upload__result">
+                                <div class="pg-upload__result-header">
+                                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#2962ff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                                  Product
+                                </div>
+                                <div class="pg-upload__result-grid pg-upload__result-grid--2col">
+                                  <span class="pg-upload__result-key">category</span><span class="pg-upload__result-val pg-upload__result-val--blue">SaaS</span>
+                                  <span class="pg-upload__result-key">USP</span><span class="pg-upload__result-val pg-upload__result-val--blue">detected</span>
+                                  <span class="pg-upload__result-key">format</span><span class="pg-upload__result-val">slide deck</span>
+                                  <span class="pg-upload__result-key">market</span><span class="pg-upload__result-val">enterprise</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Connect tools with logos -->
+                        <div class="psc__tools-row" aria-label="Connected tools">
+                          <span class="psc__tools-label">CONNECT TOOLS</span>
+                          <div class="psc__tools-chips">
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/slack.com" alt="" class="psc__tool-logo">Slack</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/notion.so" alt="" class="psc__tool-logo">Notion</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/coda.io" alt="" class="psc__tool-logo">Coda</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/atlassian.com" alt="" class="psc__tool-logo">Atlassian</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/monday.com" alt="" class="psc__tool-logo">Monday.com</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/blender.org" alt="" class="psc__tool-logo">Blender</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/autodesk.com" alt="" class="psc__tool-logo">Autodesk</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/canva.com" alt="" class="psc__tool-logo">Canva</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/figma.com" alt="" class="psc__tool-logo">Figma</span>
+                            <span class="psc__tools-chip"><img src="https://logo.clearbit.com/miro.com" alt="" class="psc__tool-logo">Miro</span>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Configure panel -->
+                      <div class="psc__wf-panel" data-step-content="1">
+                        <div class="psc__wf-panel-header">
+                          Set your parameters
+                        </div>
+                        <p class="psc__wf-panel-desc">
+                          Choose your tone, style, audience, and brand
+                          guidelines. The model adapts to what you set.
+                        </p>
+                        <div class="psc__config-rows">
+                          <div class="psc__config-row">
+                            <span class="psc__config-key">Tone</span
+                            ><span class="psc__config-val">Professional</span>
+                          </div>
+                          <div class="psc__config-row">
+                            <span class="psc__config-key">Brand colors</span
+                            ><span class="psc__config-val">your_brand</span>
+                          </div>
+                          <div class="psc__config-row">
+                            <span class="psc__config-key">Audience</span
+                            ><span class="psc__config-val">B2B enterprise</span>
+                          </div>
+                          <div class="psc__config-row">
+                            <span class="psc__config-key">Logo</span
+                            ><span class="psc__config-val">your_logo.png</span>
+                          </div>
+                          <div class="psc__config-row">
+                            <span class="psc__config-key">Company Summary</span
+                            ><span class="psc__config-val">your_summary</span>
+                          </div>
+                          <div class="psc__config-row">
+                            <span class="psc__config-key">Company Mission</span
+                            ><span class="psc__config-val">your_mission</span>
+                          </div>
+                          <div class="psc__config-row">
+                            <span class="psc__config-key"
+                              >Product information</span
+                            ><span class="psc__config-val"
+                              >your_product_info</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Build panel -->
+                      <div class="psc__wf-panel" data-step-content="2">
+                        <div class="psc__wf-panel-header">
+                          Choose what to build
+                        </div>
+                        <p class="psc__wf-panel-desc">
+                          Pick a format. Edit the output. Use it to train the
+                          model again for better results next time.
+                        </p>
+                        <div class="psc__build-types">
+                          <span class="psc__build-pill">Websites</span>
+                          <span class="psc__build-pill">2D images</span>
+                          <span class="psc__build-pill">Text</span>
+                          <span class="psc__build-pill"
+                            >Business proposals</span
+                          >
+                          <span class="psc__build-pill">3D images</span>
+                          <span class="psc__build-pill">Videos</span>
+                          <span class="psc__build-pill">Posters</span>
+                          <span class="psc__build-pill psc__build-pill--active"
+                            >Marketing campaigns</span
+                          >
+                        </div>
+                      </div>
+                      <!-- Ship panel -->
+                      <div class="psc__wf-panel" data-step-content="3">
+                        <div class="psc__wf-panel-header">Export and ship</div>
+                        <p class="psc__wf-panel-desc">
+                          Content is ready. Export, publish, or send directly to
+                          your targets on Bash.
+                        </p>
+                        <div class="psc__ship-status">
+                          <div class="psc__ship-row">
+                            <span
+                              class="psc__ship-dot psc__ship-dot--green"
+                            ></span
+                            ><span>pitch_deck_v3.pdf</span
+                            ><span class="psc__ship-badge">ready</span>
+                          </div>
+                          <div class="psc__ship-row">
+                            <span
+                              class="psc__ship-dot psc__ship-dot--green"
+                            ></span
+                            ><span>website_hero.html</span
+                            ><span class="psc__ship-badge">ready</span>
+                          </div>
+                          <div class="psc__ship-row psc__ship-row--muted">
+                            <span class="psc__ship-dot"></span
+                            ><span>campaign_v1</span
+                            ><span
+                              class="psc__ship-badge psc__ship-badge--muted"
+                              >drafting</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="psc__wf-hint">
+                      Click steps to explore the workflow
+                    </p>
+                  </div>
+                </div>
+                <div class="psc__left">
+                  <span class="psc__label psc__label--green"
+                    >CONTENT CREATION</span
+                  >
+                  <h2 id="showcase-playground-heading" class="psc__title">
+                    Cursor for content creation.
+                  </h2>
+                  <p class="psc__tagline">
+                    Build any content instantly without starting from scratch.
+                    Content workspace customized for your branding. Bring in
+                    tools you already use to build seamlessly.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <!-- 3. Startline Bash -->
+            <section
+              class="psc psc--bash"
+              aria-labelledby="showcase-bash-heading"
+            >
+              <div class="psc__inner">
+                <div class="psc__left">
+                  <span class="psc__label psc__label--teal">MARKETPLACE</span>
+                  <h2 id="showcase-bash-heading" class="psc__title">
+                    Post content, communicate, and close deals
+                  </h2>
+                  <p class="psc__tagline">
+                    Share your success stories, product launches, and marketing
+                    campaigns. Buyers and sellers discover each other and
+                    connect directly.
+                  </p>
+                  <div class="psc__bash-flow">
+                    <div class="psc__bash-flow-step">
+                      <span class="psc__bash-flow-num">01</span>
+                      <span class="psc__bash-flow-name">Post content</span>
+                    </div>
+                    <span
+                      class="psc__bash-flow-arrow"
+                      aria-hidden="true"
+                    ></span>
+                    <div class="psc__bash-flow-step">
+                      <span class="psc__bash-flow-num">02</span>
+                      <span class="psc__bash-flow-name">Communicate</span>
+                    </div>
+                    <span
+                      class="psc__bash-flow-arrow"
+                      aria-hidden="true"
+                    ></span>
+                    <div class="psc__bash-flow-step">
+                      <span class="psc__bash-flow-num">03</span>
+                      <span class="psc__bash-flow-name">Close deals</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="psc__right psc__right--bash-steps">
+                  <div class="psc__bash-steps">
+                    <div class="psc__bash-step">
+                      <div class="psc__bash-step-header">
+                        <span class="psc__bash-step-num">01</span>
+                        <span class="psc__bash-step-title">Post content</span>
+                        <span class="psc__bash-step-sub"
+                          >Marketing campaigns, product launches, success
+                          stories</span
+                        >
+                      </div>
+                    </div>
+                    <div class="psc__bash-step">
+                      <div class="psc__bash-step-header">
+                        <span class="psc__bash-step-num">02</span>
+                        <span class="psc__bash-step-title">Communicate</span>
+                        <span class="psc__bash-step-sub"
+                          >Message buyers and sellers directly, track
+                          conversations</span
+                        >
+                      </div>
+                    </div>
+                    <div class="psc__bash-step">
+                      <div class="psc__bash-step-header">
+                        <span class="psc__bash-step-num">03</span>
+                        <span class="psc__bash-step-title">Close deals</span>
+                        <span class="psc__bash-step-sub"
+                          >Manage deals and track progress from your
+                          dashboard</span
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Platform flow: problem → 3-layer pipeline (Startline → Playground → Bash) -->
+      <section
+        id="platform-flow"
+        class="section section--tight platform-flow"
+        aria-labelledby="platform-flow-heading"
+      >
+        <div class="container platform-flow__container">
+          <h2 id="platform-flow-heading" class="platform-flow__heading" data-i18n="platform_why_title">
+            Why we built Acel Lab
+          </h2>
+          <div class="platform-flow__problem">
+            <p class="platform-flow__problem-lead" data-i18n="platform_problem_lead">
+              Businesses run on too many disconnected tools.
+            </p>
+            <p class="platform-flow__problem-body" data-i18n-html="platform_problem_body">
+              Separate systems make it hard to
+              <strong
+                class="platform-flow__highlight platform-flow__highlight--red"
+                >analyze data</strong
+              >,
+              <strong
+                class="platform-flow__highlight platform-flow__highlight--blue"
+                >synchronize workflows</strong
+              >, or
+              <strong
+                class="platform-flow__highlight platform-flow__highlight--green"
+                >share information</strong
+              >.
+            </p>
+            <p class="platform-flow__problem-result" data-i18n-html="platform_problem_result">
+              <strong
+                >This fragmentation slows execution and kills
+                efficiency.</strong
+              >
+            </p>
+          </div>
+
+          <div class="platform-flow__pipeline-intro" data-i18n-html="platform_pipeline_intro_html">
+            <strong class="platform-flow__brand">Acel Lab</strong> built three
+            tools that work together as a single workflow.
+          </div>
+
+          <!-- Solutions summary -->
+          <section id="solutions" class="section section--tight solutions-inline">
+            <div class="solutions__left">
+              <h2 data-i18n="solutions_flow_title">From "who do we call?" to a signed deal</h2>
+              <p data-i18n="solutions_flow_p">Acel Lab gives teams one place to go from research to outreach. Find the right companies, prepare the right materials, and follow through without rebuilding your process every time.</p>
+              <ul class="checklist">
+                <li><span class="check"></span><span data-i18n="checklist_1">Search companies by industry, region, and funding stage</span></li>
+                <li><span class="check"></span><span data-i18n="checklist_2">Company summaries, contact info, products, and financials</span></li>
+                <li><span class="check"></span><span data-i18n="checklist_3">Shared content workspace with your brand kit applied</span></li>
+                <li><span class="check"></span><span data-i18n="checklist_4">Generate pitch decks, proposals, and briefs fast</span></li>
+                <li><span class="check"></span><span data-i18n="checklist_5">Post, message, and manage deals on Bash</span></li>
+                <li><span class="check"></span><span data-i18n="checklist_6">Find buyers, sellers, and partners in the marketplace</span></li>
+              </ul>
+            </div>
+            <div class="solutions__right"></div>
+          </section>
+
+          <div class="platform-flow__steps">
+            <article class="platform-flow__step" aria-labelledby="platform-step-1-title">
+              <div class="platform-flow__step-num" aria-hidden="true">1</div>
+              <h3 id="platform-step-1-title" class="platform-flow__step-title" data-i18n="step1_title">Find the right companies</h3>
+              <p class="platform-flow__step-desc" data-i18n="step1_desc">Startline is a business search and discovery tool. We hold data on more than 15,000 companies: financials, team contacts, product details, and more. Filter by what matters and get a shortlist worth reaching out to.</p>
+            </article>
+            <span class="platform-flow__step-arrow" aria-hidden="true"><svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 12h20M22 8l6 4-6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <article class="platform-flow__step" aria-labelledby="platform-step-2-title">
+              <div class="platform-flow__step-num" aria-hidden="true">2</div>
+              <h3 id="platform-step-2-title" class="platform-flow__step-title" data-i18n="step2_title">Build your content</h3>
+              <p class="platform-flow__step-desc" data-i18n="step2_desc">Startline Playground is a content creation workspace. Once you know which companies to approach, build pitch decks, proposals, and briefs with your brand kit already set up.</p>
+            </article>
+            <span class="platform-flow__step-arrow" aria-hidden="true"><svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 12h20M22 8l6 4-6 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <article class="platform-flow__step" aria-labelledby="platform-step-3-title">
+              <div class="platform-flow__step-num" aria-hidden="true">3</div>
+              <h3 id="platform-step-3-title" class="platform-flow__step-title" data-i18n="step3_title">Reach out and close deals</h3>
+              <p class="platform-flow__step-desc" data-i18n="step3_desc">Startline Bash is where you share the materials you built in Playground with the companies you found on Startline. Post, message, run campaigns, and track deals from your dashboard.</p>
+            </article>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Plan to Execution banner (two-tone headline, CTA) -->
+      <section class="plan-exec-section">
+        <div class="container plan-exec">
+          <div class="plan-exec__copy">
+            <h2 class="plan-exec__headline">
+              <span data-i18n="plan_go_from">Go from</span>
+              <span class="plan-exec__accent" data-i18n="plan_accent">research → outreach</span>
+              <span data-i18n="plan_in_one_tool"> in one tool.</span>
+            </h2>
+            <p class="plan-exec__sub" data-i18n="plan_sub">
+              Find the companies. Build the pitch. Send it. That's the whole
+              workflow.
+            </p>
+            <div class="container">
+              <div class="cta-center">
+                <button
+                  class="btn btn--primary plan-exec__btn openWaitlist"
+                  type="button"
+                  data-i18n="cta_early"
+                >
+                  Start for free
+                </button>
+                <p class="cta-sub" data-i18n="cta_no_card">Takes 30 seconds</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2 data-i18n="section_suite_title">What you get with the Startline suite</h2>
+            <p data-i18n="section_suite_sub">The tools your B2B team actually needs, in one place</p>
+          </div>
+          <div class="trait-grid">
+            <div class="trait-card">
+              <div class="trait-icon trait-icon--search">🔍</div>
+              <h4 data-i18n="trait_search_title">Company search & filtering</h4>
+              <p data-i18n="trait_search_p">
+                Filter 15,000+ companies by industry, region, funding stage,
+                size, and more. No spreadsheets needed.
+              </p>
+            </div>
+
+            <div class="trait-card">
+              <div class="trait-icon trait-icon--ai">🤖</div>
+              <h4 data-i18n="trait_ai_title">Company summaries & signals</h4>
+              <p data-i18n="trait_ai_p">
+                Get concise summaries, product descriptions, funding history,
+                and key contacts for every company.
+              </p>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon trait-icon--workspace">🧩</div>
+              <h4 data-i18n="trait_content_title">
+                Pitch decks, proposals & briefs
+              </h4>
+              <p data-i18n="trait_content_p">
+                Build sales and marketing materials with your brand kit already
+                applied, no reformatting every time.
+              </p>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon trait-icon--pipeline">🔗</div>
+              <h4 data-i18n="trait_pipeline_title">
+                Track prospects, not tabs
+              </h4>
+              <p data-i18n="trait_pipeline_p">
+                Go from a company search to a shortlist to an active deal
+                without switching apps or losing context.
+              </p>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon trait-icon--network">🌐</div>
+              <h4 data-i18n="trait_network_title">
+                Buyers, sellers & collaborators
+              </h4>
+              <p data-i18n="trait_network_p">
+                Browse the Bash marketplace to find companies that are actively
+                buying, selling, or looking to partner.
+              </p>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon trait-icon--signal">📊</div>
+              <h4 data-i18n="trait_signals_title">
+                Fit scores & recommendations
+              </h4>
+              <p data-i18n="trait_signals_p">
+                Get a ranked list of companies that match your profile and
+                needs, based on your activity and preferences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <br />
+        <div class="container">
+          <div class="cta-center">
+            <button
+              class="btn btn--primary plan-exec__btn openWaitlist"
+              type="button"
+              data-i18n="cta_early"
+            >
+              Start for free
+            </button>
+            <p class="cta-sub" data-i18n="cta_no_card">Takes 30 seconds</p>
+          </div>
+        </div>
+      </section>
+      <br />
+
+      <!-- Bottom CTA band -->
+      <section id="get-started" class="cta-band">
+        <div class="container cta-band__inner">
+          <div>
+            <h2 data-i18n="cta_band_heading">
+              Start with Startline. It's free.
+            </h2>
+            <p data-i18n="cta_band_sub">
+              Start with Startline, and expand into Bash + Playground when
+              you’re ready.
+            </p>
+          </div>
+          <div class="cta-band__actions">
+            <a class="btn btn--invert" href="#" data-i18n="cta_band_try"
+              >Request a demo</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+      <div class="container footer">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <a class="brand" href="index.html" aria-label="Acel Lab home">
+              <img
+                src="https://startline-static-ui.s3.us-east-1.amazonaws.com/logo/Acel+Lab+Logo.jpg"
+                alt="Acel Lab logo"
+                class="brand__logo"
+                width="160"
+                height="48"
+                loading="lazy"
+                decoding="async"
+              />
+            </a>
+          </div>
+
+          <p class="footer__desc" data-i18n="footer_desc">
+            Acel Lab builds the Startline suite. Tools for finding business
+            partners, creating pitch materials, and closing deals without the
+            usual back and forth.
+          </p>
+        </div>
+        <div class="footer__cols footer__cols--social">
+          <div class="footer__col">
+            <a
+              class="footer__social-link"
+              href="https://youtube.com/@acellab-u1h?si=nAZORVMkj7IXf6HL"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <svg
+                class="footer__social-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="4.5" y="7" width="15" height="10" rx="2.2" />
+                <path
+                  d="M10.2 10.2v3.6l3.5-1.8-3.5-1.8Z"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__col">
+            <a
+              class="footer__social-link"
+              href="https://www.linkedin.com/company/acel-lab-limited"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="footer__social-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 10v8" />
+                <path d="M7 6.5h.01" />
+                <path
+                  d="M11 10v8"
+                />
+                <path
+                  d="M11 14c.8-2.2 4-2.2 4.8 0 .2.5.2 1.1.2 1.8V18"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="container footer__bottom">
+        <span
+          >© <span id="year"></span>
+          <span data-i18n="footer_rights"
+            >Acel Lab. All rights reserved.</span
+          ></span
+        >
+        <span class="footer__fine" data-i18n="footer_privacy_terms">Privacy • Terms</span>
+      </div>
+
+      <!-- tiny inline script only for year (optional). Remove if you want 0 JS. -->
+      <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+    </footer>
+
+    <!-- Waitlist Modal -->
+    <div class="waitlist-modal" id="waitlistModal" aria-hidden="true">
+      <div class="waitlist-backdrop"></div>
+
+      <div class="waitlist-card" role="dialog" aria-modal="true">
+        <button class="waitlist-close" type="button" data-i18n-aria-label="modal_close" aria-label="Close">
+          ×
+        </button>
+
+        <span class="waitlist-badge" data-i18n="modal_badge">Coming Soon</span>
+        <h3 data-i18n="modal_heading">
+          Startline Bash and Startline Playground are launching soon.
+        </h3>
+        <p data-i18n="modal_strong">
+          Join the waitlist to get early access and a 1 month free coupon.
+        </p>
+
+        <form
+          class="waitlist-form"
+          name="waitlist"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="index.html?waitlist=1"
+        >
+          <input type="hidden" name="form-name" value="waitlist" />
+          <input type="hidden" name="bot-field" />
+          <input
+            type="text"
+            name="company"
+            data-i18n-placeholder="modal_company"
+            placeholder="Company Name"
+            required
+          />
+          <input
+            type="text"
+            name="name"
+            data-i18n-placeholder="modal_name"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            data-i18n-placeholder="modal_email"
+            placeholder="Enter your email"
+            required
+          />
+          <button
+            type="submit"
+            class="btn btn--primary"
+            data-i18n="modal_submit"
+          >
+            Join waitlist
+          </button>
+        </form>
+
+        <p class="waitlist-footnote" data-i18n="modal_footnote">
+          Early access • No spam
+        </p>
+      </div>
+    </div>
+
+    <script>
+      (() => {
+        const waitlistModal = document.getElementById("waitlistModal");
+        if (!waitlistModal) return;
+
+        const waitlistClose = waitlistModal.querySelector(".waitlist-close");
+        const waitlistBackdrop =
+          waitlistModal.querySelector(".waitlist-backdrop");
+        const waitlistForm = waitlistModal.querySelector("form.waitlist-form");
+
+        const triggers = [...document.querySelectorAll(".openWaitlist")];
+
+        function openWaitlist() {
+          waitlistModal.classList.add("is-open");
+          waitlistModal.setAttribute("aria-hidden", "false");
+        }
+
+        function closeWaitlist() {
+          waitlistModal.classList.remove("is-open");
+          waitlistModal.setAttribute("aria-hidden", "true");
+          localStorage.setItem("waitlistSeen", "true");
+        }
+
+        // Auto-open on first visit (optional)
+        if (!localStorage.getItem("waitlistSeen")) {
+          setTimeout(openWaitlist, 900);
+        }
+
+        // Close handlers
+        waitlistClose?.addEventListener("click", closeWaitlist);
+        waitlistBackdrop?.addEventListener("click", closeWaitlist);
+
+        // Open handlers
+        triggers.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            // prevent anchor jump if you ever use <a>
+            if (btn.tagName && btn.tagName.toLowerCase() === "a")
+              e.preventDefault();
+            openWaitlist();
+          });
+        });
+
+        // ✅ IMPORTANT: DO NOT preventDefault (Netlify needs native submit)
+        waitlistForm?.addEventListener("submit", () => {
+          localStorage.setItem("waitlistSeen", "true");
+
+          const btn = waitlistForm.querySelector('button[type="submit"]');
+          if (btn) {
+            btn.disabled = true;
+            btn.textContent = "Submitting…";
+          }
+          waitlistForm.classList.add("is-submitting");
+        });
+
+        // Success UI after redirect (?waitlist=1)
+        const params = new URLSearchParams(location.search);
+        if (params.get("waitlist") === "1") {
+          localStorage.setItem("waitlistSeen", "true");
+          openWaitlist();
+
+          if (waitlistForm) {
+            waitlistForm.innerHTML = `
+              <div style="padding:10px 0; font-weight:800; color:#0f172a;">
+                ✅ You’re on the waitlist.
+              </div>
+              <div style="color: rgba(15,23,42,0.65); font-weight:650;">
+                We’ll notify you when Bash and Playground launch.
+              </div>
+            `;
+            setTimeout(closeWaitlist, 1400);
+          }
+        }
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const toggle = document.getElementById("mobile-nav-toggle");
+        if (!toggle) return;
+
+        document.querySelectorAll(".mobile-menu a").forEach((a) => {
+          a.addEventListener("click", () => {
+            toggle.checked = false;
+          });
+        });
+      })();
+    </script>
+
+    <script>
+      /* Startline pipeline tabs */
+      (() => {
+        const tabsEl = document.querySelector("[data-startline-tabs]");
+        const panel = document.querySelector("[data-startline-video-panel]");
+        if (!tabsEl || !panel) return;
+        const panels = panel.querySelectorAll("[data-video-slot]");
+        const buttons = tabsEl.querySelectorAll(".psc__pipe-btn");
+        /* Note: slot order in HTML is 0=Raw,1=Curate,2=Gen,3=Cat,4=Custom,5=Recommend
+           matching button data-tab-index values */
+        const hintEl = document.querySelector(
+          "[data-startline-hint] .psc__hint-text",
+        );
+        const hints = [
+          "Next Curate: Validate Sources",
+          "Next: Generate insight. Extract signals from clean data",
+          "Next: Categorize. Tag by industry, region, and stage",
+          "Next: Recommend. Match companies to your profile",
+          "Pipeline complete. Your data is ready.",
+        ];
+        function playSlotVideo(vid) {
+          if (!vid) return;
+          const srcEl = vid.querySelector("source");
+          const hasSrc = (srcEl && srcEl.getAttribute("src")) || vid.getAttribute("src");
+          if (!hasSrc) return;
+          if (vid.readyState === 0) {
+            vid.load();
+            vid.addEventListener("canplay", () => vid.play().catch(() => {}), { once: true });
+          } else {
+            vid.play().catch(() => {});
+          }
+        }
+        function showSlot(index) {
+          panels.forEach((p, i) => {
+            p.classList.toggle("psc__vid-slot--active", i === index);
+            const vid = p.querySelector(".psc__video");
+            if (i !== index) {
+              if (vid) { vid.pause(); vid.currentTime = 0; }
+            }
+          });
+          buttons.forEach((b, i) => {
+            b.classList.toggle("psc__pipe-btn--active", i === index);
+            b.setAttribute("aria-selected", String(i === index));
+          });
+          if (hintEl) hintEl.textContent = hints[index] || "";
+          const activePanel = panels[index];
+          if (activePanel) {
+            playSlotVideo(activePanel.querySelector(".psc__video"));
+          }
+        }
+        buttons.forEach((btn, i) =>
+          btn.addEventListener("click", () => showSlot(i)),
+        );
+      })();
+    </script>
+
+    <script>
+      /* Generate Insight: animated demo cycle */
+      (() => {
+        const demo = document.querySelector("[data-gi-demo]");
+        if (!demo) return;
+        const stages = demo.querySelectorAll("[data-gi-stage]");
+        if (!stages.length) return;
+        const durations = [2200, 2400, 2800];
+        let current = 0;
+        let timer;
+
+        function advance() {
+          stages[current].classList.remove("gi-stage--active");
+          current = (current + 1) % stages.length;
+          stages[current].classList.add("gi-stage--active");
+          timer = setTimeout(advance, durations[current]);
+        }
+        timer = setTimeout(advance, durations[0]);
+      })();
+
+      /* Playground Train panel: upload animation cycle */
+      (() => {
+        const upload = document.querySelector("[data-pg-upload]");
+        const nav    = document.querySelector("[data-pg-upload-nav]");
+        if (!upload) return;
+        const stages  = upload.querySelectorAll(".pg-upload__stage");
+        const navBtns = nav ? nav.querySelectorAll(".pg-upload__nav-btn") : [];
+        if (!stages.length) return;
+        const durations = [800, 1000, 2800, 2800, 3000];
+        let current = 0;
+        let timer;
+        let paused = false;
+        let counterRaf;
+
+        /* Animate percentage counters + bar widths for stage 2 */
+        function runCounters() {
+          cancelAnimationFrame(counterRaf);
+          const stage2 = upload.querySelector("[data-stage='2']");
+          if (!stage2) return;
+          const pcts  = stage2.querySelectorAll("[data-target-pct]");
+          const bars  = stage2.querySelectorAll("[data-target-width]");
+          const duration = 1800; /* ms */
+          const start = performance.now();
+          /* reset to 0 before animating */
+          pcts.forEach(el => el.textContent = "0%");
+          bars.forEach(el => { el.style.width = "0%"; });
+          function tick(now) {
+            const elapsed = now - start;
+            const t = Math.min(elapsed / duration, 1);
+            const ease = 1 - Math.pow(1 - t, 3); /* ease-out cubic */
+            pcts.forEach(el => {
+              const target = parseInt(el.dataset.targetPct, 10);
+              el.textContent = Math.round(target * ease) + "%";
+            });
+            bars.forEach(el => {
+              const target = parseInt(el.dataset.targetWidth, 10);
+              el.style.width = (target * ease).toFixed(1) + "%";
+            });
+            if (t < 1) counterRaf = requestAnimationFrame(tick);
+          }
+          counterRaf = requestAnimationFrame(tick);
+        }
+
+        function syncNav(index) {
+          navBtns.forEach((b) => {
+            const g = parseInt(b.dataset.goto, 10);
+            b.classList.toggle("pg-upload__nav-btn--active",
+              (g === 0 && index <= 1) ||
+              (g === 2 && index === 2) ||
+              (g === 3 && index >= 3)
+            );
+          });
+        }
+
+        function goTo(index) {
+          stages[current].classList.remove("pg-upload__stage--active");
+          current = index;
+          stages[current].classList.add("pg-upload__stage--active");
+          syncNav(current);
+          if (current === 2) runCounters();
+        }
+
+        function advance() {
+          if (paused) return;
+          goTo((current + 1) % stages.length);
+          timer = setTimeout(advance, durations[current]);
+        }
+
+        timer = setTimeout(advance, durations[0]);
+
+        navBtns.forEach((btn) => {
+          btn.addEventListener("click", () => {
+            clearTimeout(timer);
+            paused = true;
+            goTo(parseInt(btn.dataset.goto, 10));
+            timer = setTimeout(() => {
+              paused = false;
+              advance();
+            }, 6000);
+          });
+        });
+      })();
+    </script>
+
+    <script>
+      /* Playground workflow tabs */
+      (() => {
+        const wf = document.querySelector("[data-playground-tabs]");
+        if (!wf) return;
+        const tabs = wf.querySelectorAll(".psc__wf-tab");
+        const cards = wf.querySelectorAll(".psc__wf-panel[data-step-content]");
+        function setStep(index) {
+          tabs.forEach((t, i) => {
+            t.classList.toggle("psc__wf-tab--active", i === index);
+            t.setAttribute("aria-selected", String(i === index));
+          });
+          cards.forEach((c) => {
+            const n = parseInt(c.getAttribute("data-step-content"), 10);
+            c.classList.toggle("psc__wf-panel--active", n === index);
+          });
+        }
+        tabs.forEach((t, i) => t.addEventListener("click", () => setStep(i)));
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const card = document.querySelector(".product--startline");
+        if (!card) return;
+        const v = card.querySelector(".product-hover__vid");
+        if (!v) return;
+
+        card.addEventListener("mouseenter", () => v.play().catch(() => {}));
+        card.addEventListener("mouseleave", () => {
+          v.pause();
+          v.currentTime = 0;
+        });
+
+        card.addEventListener("focusin", () => v.play().catch(() => {}));
+        card.addEventListener("focusout", () => {
+          v.pause();
+          v.currentTime = 0;
+        });
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const ribbon = document.getElementById("waitlistRibbon");
+        if (!ribbon) return;
+
+        function setRibbonHeightVar() {
+          const h = ribbon.getBoundingClientRect().height;
+          document.documentElement.style.setProperty("--ribbon-h", `${h}px`);
+        }
+
+        setRibbonHeightVar();
+        window.addEventListener("resize", setRibbonHeightVar);
+      })();
+    </script>
+
+    <script>
+      (() => {
+        const btn = document.querySelector(
+          "#langSwitcherDesktop .lang-switcher__btn",
+        );
+        const dropdown = document.getElementById("langDropdownDesktop");
+        if (!btn || !dropdown) return;
+        btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          const open = btn.getAttribute("aria-expanded") === "true";
+          btn.setAttribute("aria-expanded", !open);
+          dropdown.classList.toggle("is-open", !open);
+        });
+        document.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          dropdown.classList.remove("is-open");
+        });
+        dropdown.addEventListener("click", (e) => e.stopPropagation());
+      })();
+    </script>
+
+    <script>
+      (function () {
+        var topStack = document.querySelector(".top-stack");
+        if (!topStack) return;
+        var threshold = 20;
+        function getScrollTop() {
+          try {
+            if (typeof window.scrollY === "number") return window.scrollY;
+            if (typeof window.pageYOffset === "number")
+              return window.pageYOffset;
+            var d = document.documentElement;
+            var b = document.body;
+            return (d && d.scrollTop) || (b && b.scrollTop) || 0;
+          } catch (e) {
+            return 0;
+          }
+        }
+        function updateScroll() {
+          var y = getScrollTop();
+          if (y > threshold) {
+            topStack.classList.add("is-scrolled");
+          } else {
+            topStack.classList.remove("is-scrolled");
+          }
+        }
+        updateScroll();
+        window.addEventListener("scroll", updateScroll, { passive: true });
+        window.addEventListener("resize", updateScroll);
+        window.addEventListener("load", updateScroll);
+        document.addEventListener("DOMContentLoaded", updateScroll);
+        setInterval(updateScroll, 150);
+      })();
+    </script>
+
+  </body>
+</html>

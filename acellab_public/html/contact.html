@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Acel Lab — Contact</title>
+    <meta
+      name="description"
+      content="Contact Acel Lab — Startline, Bash, and Playground."
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/i18n.js" defer></script>
+  </head>
+
+  <body>
+    <!-- ========================= Waitlist Top Ribbon ========================= -->
+    <div class="top-stack">
+      <header class="site-header" id="siteHeader">
+        <input class="mobile-toggle" type="checkbox" id="mobile-nav-toggle" />
+        <div class="container header">
+          <a class="brand" href="index.html" aria-label="Acel Lab home">
+            <img src="https://startline-static-ui.s3.us-east-1.amazonaws.com/logo/Acel+Lab+Logo.jpg" alt="Acel Lab logo" class="brand__logo" width="160" height="48" loading="lazy" decoding="async" />
+          </a>
+          <nav class="desktop-nav" aria-label="Primary">
+            <div class="header__center">
+              <div class="nav__dropdown">
+                <a class="nav__dropbtn" href="../../startline_public/html/index.html">
+                  <span data-i18n="nav_products">Products</span>
+                  <span class="nav__chev" aria-hidden="true">▾</span>
+                </a>
+                <div class="nav__dropmenu" role="menu" aria-label="Products menu">
+                  <a role="menuitem" href="https://startline.vip" target="_blank" rel="noopener noreferrer">Startline</a>
+                  <a role="menuitem" href="../../startline_public/html/playground.html">Startline Playground</a>
+                  <a role="menuitem" href="../../startline_public/html/bash.html">Startline Bash</a>
+                </div>
+              </div>
+              <a class="desktop-nav__link" href="contact.html" data-i18n="nav_contact">Contact</a>
+              <a class="desktop-nav__link" href="careers.html">Careers</a>
+            </div>
+            <div class="header__right">
+              <div class="lang-switcher" id="langSwitcherDesktop">
+                <button type="button" class="lang-switcher__btn" aria-expanded="false" aria-haspopup="true" aria-label="Language">
+                  <span data-lang-current>EN</span>
+                  <span class="lang-switcher__chevron" aria-hidden="true">▾</span>
+                </button>
+                <div class="lang-switcher__dropdown" id="langDropdownDesktop" role="menu">
+                  <button type="button" class="lang-switcher__option" role="menuitem" data-lang-set="en">EN</button>
+                  <button type="button" class="lang-switcher__option" role="menuitem" data-lang-set="zh">中文</button>
+                  <button type="button" class="lang-switcher__option" role="menuitem" data-lang-set="ja">日本語</button>
+                  <button type="button" class="lang-switcher__option" role="menuitem" data-lang-set="ko">한국어</button>
+                </div>
+              </div>
+              <button class="btn btn--primary mobile-actions__btn openWaitlist" type="button" data-i18n="ribbon_btn">Join waitlist</button>
+            </div>
+          </nav>
+          <label class="mobile-burger" for="mobile-nav-toggle" aria-label="Open menu">
+            <span></span><span></span><span></span>
+          </label>
+        </div>
+        <div class="mobile-menu">
+          <nav class="mobile-menu__inner" aria-label="Mobile navigation">
+            <details class="mobile-dropdown">
+              <summary>
+                <span data-i18n="nav_products">Products</span>
+                <span class="mobile-dropdown__chev" aria-hidden="true">▾</span>
+              </summary>
+              <div class="mobile-dropdown__items">
+                <a href="../../startline_public/html/index.html">Products</a>
+                <a href="https://startline.vip" target="_blank" rel="noopener noreferrer">Startline</a>
+                <a href="../../startline_public/html/playground.html">Startline Playground</a>
+                <a href="../../startline_public/html/bash.html">Startline Bash</a>
+              </div>
+            </details>
+            <a class="mobile-link" href="contact.html" data-i18n="nav_contact">Contact</a>
+            <a class="mobile-link" href="careers.html">Careers</a>
+            <div class="lang-switcher lang-switcher--mobile">
+              <span class="lang-switcher__label" style="display:block;font-weight:700;margin-bottom:8px;font-size:0.9rem;" data-i18n="lang_label">Language</span>
+              <div class="lang-switcher__options">
+                <button type="button" class="lang-switcher__option" data-lang-set="en">EN</button>
+                <button type="button" class="lang-switcher__option" data-lang-set="zh">中文</button>
+                <button type="button" class="lang-switcher__option" data-lang-set="ja">日本語</button>
+                <button type="button" class="lang-switcher__option" data-lang-set="ko">한국어</button>
+              </div>
+            </div>
+            <div class="mobile-actions">
+              <button class="btn btn--primary mobile-actions__btn openWaitlist" type="button" data-i18n="ribbon_btn">Join waitlist</button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="announcement-bar" id="waitlistRibbon">
+        <button type="button" class="announcement-bar__pill openWaitlist" id="openWaitlistRibbon">
+          <span class="announcement-bar__badge" data-i18n="ribbon_badge">New</span>
+          <span class="announcement-bar__text" data-i18n="ribbon_text">Startline Playground &amp; Bash waitlist is open</span>
+          <span class="announcement-bar__arrow" aria-hidden="true">→</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- ========================= Main ========================= -->
+    <main class="contact-page">
+      <br />
+
+      <!-- Success message -->
+      <p
+        id="sentMsg"
+        style="display: none; max-width: 1100px; margin: 0 auto 16px"
+        data-i18n="contact_success"
+      >
+        ✅ Message sent. Thank you — we’ll get back to you soon.
+      </p>
+
+      <section class="contact-content">
+        <!-- Left -->
+        <div class="contact-info">
+          <h1 data-i18n="contact_heading">Get in touch</h1>
+          <p data-i18n="contact_intro">
+            Whether you're a startup, corporate, or partner, we’d love to
+            explore how we can create real chemistry together.
+          </p>
+          <p class="contact-note" data-i18n="contact_note">
+            We typically respond within 1–2 business days.
+          </p>
+        </div>
+
+        <!-- Right -->
+        <div class="contact-form-wrapper">
+          <h2 data-i18n="contact_form_title">Send us a message</h2>
+
+          <!-- ========================= Contact Form (Netlify) ========================= -->
+          <form
+            class="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            action="/contact.html?sent=1"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <input type="hidden" name="bot-field" />
+
+            <div class="form-group">
+              <label data-i18n="contact_label_name">Name</label>
+              <input type="text" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="contact_label_email">Email</label>
+              <input type="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="contact_label_company">Company (optional)</label>
+              <input type="text" name="company" />
+            </div>
+
+            <div class="form-group">
+              <label data-i18n="contact_label_message">Message</label>
+              <textarea name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" data-i18n="contact_submit">Send message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================= Footer ========================= -->
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+      <div class="container footer">
+        <div class="footer__brand">
+          <a class="brand" href="index.html" aria-label="Acel Lab home">
+            <img
+              src="https://startline-static-ui.s3.us-east-1.amazonaws.com/logo/Acel+Lab+Logo.jpg"
+              alt="Acel Lab logo"
+              class="brand__logo"
+              width="160"
+              height="48"
+              loading="lazy"
+              decoding="async"
+            />
+          </a>
+
+          <p class="footer__desc" data-i18n="footer_desc">
+            Startline helps startups and corporates connect, collaborate, and
+            create real chemistry — powered by data intelligence and AI
+            workflows.
+          </p>
+        </div>
+
+        <div class="footer__cols footer__cols--social">
+          <div class="footer__col">
+            <a
+              class="footer__social-link"
+              href="https://youtube.com/@acellab-u1h?si=nAZORVMkj7IXf6HL"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
+              <svg
+                class="footer__social-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect x="4.5" y="7" width="15" height="10" rx="2.2" />
+                <path
+                  d="M10.2 10.2v3.6l3.5-1.8-3.5-1.8Z"
+                  fill="currentColor"
+                  stroke="none"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="footer__col">
+            <a
+              class="footer__social-link"
+              href="https://www.linkedin.com/company/acel-lab-limited"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <svg
+                class="footer__social-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M7 10v8" />
+                <path d="M7 6.5h.01" />
+                <path d="M11 10v8" />
+                <path d="M11 14c.8-2.2 4-2.2 4.8 0 .2.5.2 1.1.2 1.8V18" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <span>© <span id="year"></span> <span data-i18n="footer_rights">Acel Lab. All rights reserved.</span></span>
+        <span class="footer__fine" data-i18n="footer_privacy_terms">Privacy • Terms</span>
+      </div>
+    </footer>
+
+    <!-- ========================= Waitlist Modal (Netlify) ========================= -->
+    <div class="waitlist-modal" id="waitlistModal" aria-hidden="true">
+      <div class="waitlist-backdrop"></div>
+
+      <div class="waitlist-card" role="dialog" aria-modal="true">
+        <button class="waitlist-close" aria-label="Close">×</button>
+
+        <span class="waitlist-badge">Coming Soon</span>
+
+        <h3>
+          <strong>Startline Bash</strong> and
+          <strong>Startline Playground</strong> are launching soon.
+        </h3>
+
+        <form
+          class="waitlist-form"
+          name="waitlist"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/contact.html?waitlist=1"
+        >
+          <input type="hidden" name="form-name" value="waitlist" />
+          <input type="hidden" name="bot-field" />
+
+          <input
+            type="text"
+            name="company"
+            placeholder="Company Name"
+            required
+          />
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+
+          <button type="submit" class="btn btn--primary">Join waitlist</button>
+        </form>
+
+        <p class="waitlist-footnote">Early access • No spam</p>
+      </div>
+    </div>
+
+    <!-- ========================= Scripts ========================= -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const params = new URLSearchParams(location.search);
+      if (params.get("sent") === "1") {
+        document.getElementById("sentMsg").style.display = "block";
+      }
+
+      (() => {
+        const modal = document.getElementById("waitlistModal");
+        const closeBtn = modal.querySelector(".waitlist-close");
+        const backdrop = modal.querySelector(".waitlist-backdrop");
+
+        document.querySelectorAll(".openWaitlist").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            modal.classList.add("is-open");
+            modal.setAttribute("aria-hidden", "false");
+          });
+        });
+
+        function close() {
+          modal.classList.remove("is-open");
+          modal.setAttribute("aria-hidden", "true");
+        }
+
+        closeBtn.addEventListener("click", close);
+        backdrop.addEventListener("click", close);
+      })();
+    </script>
+  </body>
+</html>
